@@ -1,0 +1,89 @@
+import java.util.Random;
+
+class Card{  //class Card
+
+    int suit;
+
+    int face;
+
+    public Card(){ //default constructor
+
+        Random rand = new Random();
+
+        //assingning random values in the specified range
+
+        int suit = rand.nextInt(4)+1;
+
+        int face = rand.nextInt(13)+1;
+
+        this.suit=suit;
+
+        this.face=face;
+
+
+    }
+
+    public Card(int face,int suit){ //parameterised constructor
+
+        //it sets the value only if the values are in the specified range
+
+        if(suit>=1 && suit<=4)
+
+            this.suit=suit;
+
+        if(face>=1 && face<=13)
+
+            this.face=face;
+
+
+    }
+
+    int getFace(){
+
+        return face;
+
+    }
+
+    int getSuit(){
+
+        return suit;
+
+    }
+
+    void setFace(int fac){
+
+        if(fac>=1 && fac<=13){
+
+            this.face=fac;
+
+        }
+
+    }
+
+    void setSuit(int s){
+
+        if(s>=1 && s<=4)
+
+            this.suit=s;
+
+    }
+
+    String getFaceText(){ //return the text of face
+
+        String[] faces={" ","Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"};
+
+        return faces[face];
+
+    }
+
+    public String toString(){ //toString method
+
+        String[] faces={" ","Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"};
+
+        String[] suits={" ","Hearts","Clubs","Diamonds","Spades"};
+
+        return faces[face]+" of "+suits[suit];
+
+    }
+
+}
