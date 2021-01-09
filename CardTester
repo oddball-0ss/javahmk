@@ -1,0 +1,61 @@
+public class CardTester
+
+{
+
+  public static void main(String[] args) {
+
+  //creating 5 card objects using default constructor
+
+     Card card1 = new Card();
+
+     Card card2 = new Card();
+
+     Card card3 = new Card();
+
+     Card card4 = new Card();
+
+     Card card5 = new Card();
+
+     //printing the toString method of each
+
+     System.out.println(card1);
+
+     System.out.println(card2);
+
+     System.out.println(card3);
+
+     System.out.println(card4);
+
+     System.out.println(card5);
+
+     //creating 5 Card objects using parameterised constructor
+
+     Card card6 = new Card(1,1);
+
+     Card card7 = new Card(13,4);
+
+     Card card8 = new Card(11,2);
+
+     Card card9 = new Card(8,3);
+
+     Card card10 = new Card(15,5);
+
+     //printing the toString method of each
+
+     System.out.println(card6);
+
+     System.out.println(card7);
+
+     System.out.println(card8);
+
+     System.out.println(card9);
+
+     System.out.println(card10);
+
+     
+
+    
+
+  }
+
+}
